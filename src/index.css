@@ -1,0 +1,13 @@
+.videoTag
+{
+  
+  margin-top:-8%;
+  height: '300px';
+    overflow: 'hidden';
+  object-fit: cover;
+}
+.g2
+{
+  border: 2px solid;
+  
+}

@@ -1,0 +1,7 @@
+.bord
+{
+    
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    box-shadow: 0 8px 6px -4px lightgrey;
+}

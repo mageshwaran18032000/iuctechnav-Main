@@ -1,0 +1,183 @@
+nav{
+    
+    color:white;
+    position:relative;
+    display:flex;
+    justify-content: space-between;
+    padding-top:15px;
+    
+    z-index:99;
+}
+.logo
+{
+    font-weight: 600;
+    font-size: 25px;
+    color:tomato;
+}
+.menu-list
+{
+    display: flex;
+   list-style-type:none;
+    text-transform: uppercase;
+    text-align: center;
+    justify-content: space-between;
+}
+.menu-list li a
+{
+    text-decoration: none;
+    color: white;
+    font-weight: 100;
+    padding:5px;
+    margin-left: 15px;
+}
+.menu-list li a:hover,.menu-list li a.active
+{
+   background-color: white;
+   border-radius: 2px;
+   color: black;
+   transition:all 0.5s ease-in-out
+}
+.menu-list li:nth-child(5) a{
+    color:red;
+}
+.menu-icon
+{
+    display: none;
+}
+.fas
+{
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+.menu-icon .fa-bars 
+{
+    transform: rotate(360deg);
+    transition: all 0.5s ease-in-out;
+}
+@media  screen and (max-width:800px) {
+    
+    .logo
+    {
+        font-size:20px;
+    }
+    .menu-list li a 
+    {
+        font-size:14px;
+        margin-left: 10px;
+    }
+}
+@media screen and (max-width:600px)
+{
+   
+    .menu-icon
+    {
+        display:block;
+    }
+    .menu-list
+    {
+        display: flex;
+        flex-direction: column;
+        
+        width:100%;
+        background-color: rgba(0,0,0,0.7);
+        padding: 20px;
+        right:0;
+        left:0;
+        top:64px;
+        position:absolute;
+        transition: all 0.5s ease-in-out;
+    }
+    .menu-list li
+    {
+        width:100%;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .menu-list li:last-child
+    {
+        margin-bottom: 0px;
+    }
+    .menu-list li a,.menu-list li :last-child a
+    {
+        width:100%;
+        display: block;
+        margin:auto;
+       
+        
+    }
+    .menu-list.close
+    {
+        left:-110%;
+        transition: all 0.5s ease-in-out;
+    }
+    
+    
+}
+@media only screen and (min-device-width:601px) and (max-device-width:1200px)
+{
+  
+ 
+    nav{
+    
+        color:white;
+        position:relative;
+        display:flex;
+        justify-content: space-between;
+        padding: 0px;
+        z-index:99;
+        
+    }
+    .mnmn
+    {
+       
+       background-size: cover;
+       width: 100%;
+       height: 100vh;
+       position:relative;
+      
+       background-position: center;
+       padding: 0px;
+    }
+    .mnmn::after
+    {
+        background:rgba(0,0,0,0.4);
+        content:"";
+        width:100%;
+        padding: 0px;
+        height:100%;
+        position:absolute;
+        
+        top:0;
+        bottom:0;
+        left:0;
+        right:0;
+    }
+   
+    .videoTag
+    {
+        
+        height: 15%;
+    }
+}
+.hhh
+{
+    position:fixed;
+    margin-top:5%;
+    width:100%;
+    padding-right:30px;
+    padding-left:20px;
+    background-color: white;
+    color:black;
+    padding-top:30px;
+    margin-left:-1%;
+    
+
+}
+.jjj li a
+{
+    text-decoration: none;
+    color: black;
+    font-weight: 100;
+    padding:5px;
+    margin-left: 15px;
+}
